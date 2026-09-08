@@ -247,17 +247,43 @@ apex-ats/
 
 ---
 
-## 🚀 Execution Commands
+## 🚀 Quickstart & Execution
 
-```powershell
-# 1. Run the local working slice test
-cd C:\Users\Badsiwal\.gemini\antigravity-ide\scratch\apex-ats
-.\.venv\Scripts\python.exe run_test_slice.py
-
-# 2. Run the threshold calibration optimization
-.\.venv\Scripts\python.exe calibrate_and_stress_test.py
-
-# 3. Start the interactive Command Dashboard
-.\.venv\Scripts\python.exe -m uvicorn app:app --port 8000 --host 127.0.0.1
+### 1. Clone the Repository
+```bash
+git clone https://github.com/PrinceBad/APEX-ATS.git
+cd APEX-ATS
 ```
-Open **`http://127.0.0.1:8000/?nocache=1`** in your browser.
+
+### 2. Setup Virtual Environment
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment
+# Windows (PowerShell):
+.\.venv\Scripts\Activate.ps1
+
+# Linux / macOS (bash/zsh):
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Tests & Calibration
+```bash
+# Execute functional slice & pipeline verification
+python run_test_slice.py
+
+# Run empirical threshold calibration & counterfactual sensitivity audit
+python calibrate_and_stress_test.py
+```
+
+### 5. Launch Interactive Command Dashboard
+```bash
+python -m uvicorn app:app --port 8000 --host 127.0.0.1 --reload
+```
+Open **`http://localhost:8000`** in your browser.
