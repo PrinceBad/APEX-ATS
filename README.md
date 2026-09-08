@@ -34,7 +34,16 @@ Recruiting infrastructure is currently facing a triple breakdown:
 * **High-Throughput & Sovereign Execution**: Runs at sub-4ms latency per candidate (~280 docs/sec on CPU) with zero recurring per-token LLM API fees and zero candidate PII leakage to third parties.
 
 ### 🏷️ Domain Topics & Tags
-`ats` • `applicant-tracking-system` • `resume-screening` • `prompt-injection-defense` • `anti-cheat` • `bm25` • `semantic-search` • `nlp` • `fastapi` • `react` • `bias-audit` • `eeoc-compliance` • `hr-tech` • `verifiable-ai`
+![ATS](https://img.shields.io/badge/Topic-ATS-0F172A?style=flat-square)
+![Resume Screening](https://img.shields.io/badge/Topic-Resume_Screening-0F172A?style=flat-square)
+![Prompt Injection Defense](https://img.shields.io/badge/Topic-Prompt_Injection_Defense-0F172A?style=flat-square)
+![Anti Cheat](https://img.shields.io/badge/Topic-Anti_Cheat-0F172A?style=flat-square)
+![BM25 Retrieval](https://img.shields.io/badge/Topic-BM25_Retrieval-0F172A?style=flat-square)
+![Dense Semantic Search](https://img.shields.io/badge/Topic-Semantic_Vectors-0F172A?style=flat-square)
+![EEOC Compliance](https://img.shields.io/badge/Topic-EEOC_Compliance-0F172A?style=flat-square)
+![Bias Audit](https://img.shields.io/badge/Topic-Bias_Audit-0F172A?style=flat-square)
+![HR Tech](https://img.shields.io/badge/Topic-HR_Tech-0F172A?style=flat-square)
+![AI Safety](https://img.shields.io/badge/Topic-AI_Safety-0F172A?style=flat-square)
 
 ---
 
