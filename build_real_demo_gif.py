@@ -31,7 +31,7 @@ def main():
             durations.append(dur)
             print(f"Loaded and processed: {path} (size: {img.size})")
 
-    out_gif = "assets/apex_ats_demo.gif"
+    out_gif = "assets/apex_ats_live_demo.gif"
     frames[0].save(
         out_gif,
         save_all=True,
