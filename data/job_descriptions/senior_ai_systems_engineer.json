@@ -1,0 +1,21 @@
+{
+  "title": "Senior AI Systems & Edge Runtime Engineer",
+  "description": "We are seeking a Senior AI Systems Engineer to build high-performance on-device neural network runtimes, distributed model serving pipelines, and edge inference engines. The ideal candidate has deep expertise in low-latency model optimization, container orchestration, and real-time inference using LiteRT, vLLM, and Triton.",
+  "min_experience_years": 4.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "python",
+    "kubernetes",
+    "litert",
+    "vllm"
+  ],
+  "preferred_skills": [
+    "c++",
+    "docker",
+    "onnx",
+    "quantization",
+    "triton",
+    "aws",
+    "gguf"
+  ]
+}

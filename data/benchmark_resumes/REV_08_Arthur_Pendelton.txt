@@ -1,0 +1,1 @@
+Staff Systems Architect with 10.0 years experience in distributed C++ and Python. Implemented Kubernetes infrastructure. Strong systems background, self-studying LiteRT and vLLM. BA in Physics. Skills: C++, Python, Kubernetes, Docker.

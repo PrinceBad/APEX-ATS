@@ -1,0 +1,1 @@
+Distributed Backend Architect with 7.0 years exp in Kubernetes and Python microservices. Built scalable gRPC services handling 40k QPS. Recently trained on vLLM and LiteRT open source tools. BS in CS. Skills: Python, Kubernetes, Docker, vLLM, C++.

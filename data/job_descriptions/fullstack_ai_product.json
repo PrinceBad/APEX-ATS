@@ -1,0 +1,22 @@
+{
+  "title": "Senior Full-Stack AI Engineer",
+  "description": "Building next-generation generative AI web applications with real-time streaming, fluid interactive canvases, and reactive interfaces. Bridging modern React/Next.js frontends with high-throughput FastAPI and LLM inference endpoints.",
+  "min_experience_years": 3.5,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "react",
+    "typescript",
+    "python",
+    "fastapi"
+  ],
+  "preferred_skills": [
+    "next.js",
+    "tailwind",
+    "websockets",
+    "docker",
+    "node.js",
+    "postgres"
+  ],
+  "category": "Full-Stack AI",
+  "icon": "\u2728"
+}

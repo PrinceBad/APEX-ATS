@@ -1,0 +1,1 @@
+Senior AI Infrastructure Engineer with 6.0 years experience. Built vLLM distributed inference gateway on Kubernetes serving 10M requests daily with 99.9% uptime. Optimized model execution with LiteRT and TensorRT-LLM. BS in Computer Science. Skills: Python, C++, Kubernetes, vLLM, LiteRT, AWS.

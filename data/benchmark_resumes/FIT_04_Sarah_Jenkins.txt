@@ -1,0 +1,1 @@
+Principal Inference Engineer with 7.0 years exp building high-throughput edge AI pipelines. Implemented LiteRT on mobile NPU hardware reducing inference from 80ms to 22ms. Scaled Kubernetes clusters running vLLM. BS in CS from MIT. Skills: Python, C++, LiteRT, vLLM, Kubernetes, Docker.

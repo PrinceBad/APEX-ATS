@@ -1,0 +1,1 @@
+Staff Edge AI Engineer with 6.5 years of experience deploying Google LiteRT and vLLM on 120 Kubernetes nodes. INT4 quantization, 45% latency reduction, 50,000 QPS. BS in CS from UC Berkeley. Skills: Python, C++, LiteRT, vLLM, Kubernetes, Docker, Triton.

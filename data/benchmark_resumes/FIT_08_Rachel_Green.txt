@@ -1,0 +1,1 @@
+Distributed Systems Engineer with 4.5 years experience in real-time AI serving. Deployed LiteRT for mobile on-device models and vLLM on Kubernetes for cloud LLM serving. BS in CS. Skills: Python, LiteRT, vLLM, Kubernetes, Docker, AWS.

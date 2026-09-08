@@ -1,0 +1,23 @@
+{
+  "title": "Autonomous Robotics & Computer Vision Lead",
+  "description": "Designing real-time edge perception pipelines, SLAM navigation, and sensor fusion algorithms for autonomous robotics. Optimizing deep vision backbones using TensorRT and deploying on ROS2 embedded architectures.",
+  "min_experience_years": 4.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "c++",
+    "python",
+    "ros2",
+    "pytorch",
+    "opencv"
+  ],
+  "preferred_skills": [
+    "tensorrt",
+    "cuda",
+    "slam",
+    "docker",
+    "point cloud",
+    "linux"
+  ],
+  "category": "Robotics & CV",
+  "icon": "\ud83d\udc41\ufe0f"
+}

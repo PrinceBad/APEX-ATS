@@ -1,0 +1,23 @@
+{
+  "title": "Lead GenAI & Autonomous Agent Architect",
+  "description": "Architecting production multi-agent orchestration frameworks, enterprise RAG graphs, and autonomous tool-calling systems. Deep mastery of LangGraph, AutoGen, latency-optimized LLM serving with vLLM, vector search, and structured function calling.",
+  "min_experience_years": 4.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "python",
+    "langgraph",
+    "vllm",
+    "vector databases",
+    "rag"
+  ],
+  "preferred_skills": [
+    "autogen",
+    "docker",
+    "kubernetes",
+    "fastapi",
+    "prompt optimization",
+    "redis"
+  ],
+  "category": "GenAI & Agents",
+  "icon": "\ud83e\udd16"
+}

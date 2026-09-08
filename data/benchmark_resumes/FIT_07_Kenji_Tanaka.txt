@@ -1,0 +1,1 @@
+AI Platform Engineer with 5.0 years experience building model inference clusters. Deployed Kubernetes orchestration for vLLM and LiteRT edge runtimes handling 35,000 QPS. BS in Computer Science from Stanford. Skills: Python, Kubernetes, vLLM, LiteRT, C++, Triton.

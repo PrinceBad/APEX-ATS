@@ -1,0 +1,21 @@
+{
+  "title": "Embedded Edge AI & Quantization Specialist",
+  "description": "Deploying quantized neural networks to edge hardware, mobile NPUs, and microcontrollers. Deep knowledge of INT4/INT8 quantization, LiteRT / TFLite, and C++ inference runtimes.",
+  "min_experience_years": 3.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "c++",
+    "python",
+    "litert",
+    "quantization"
+  ],
+  "preferred_skills": [
+    "onnx",
+    "arm",
+    "npu",
+    "embedded linux",
+    "docker"
+  ],
+  "category": "Embedded",
+  "icon": "\ud83d\udd2c"
+}

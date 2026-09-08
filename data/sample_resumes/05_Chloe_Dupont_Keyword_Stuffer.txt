@@ -1,0 +1,18 @@
+CHLOE DUPONT
+New York, NY | chloe.d@example.com
+
+SUMMARY
+Junior Developer interested in machine learning and cloud systems.
+
+SKILLS & BUZZWORDS
+kubernetes kubernetes kubernetes kubernetes kubernetes kubernetes
+vllm vllm vllm vllm vllm vllm vllm vllm
+litert litert litert litert litert litert
+
+EXPERIENCE
+Junior IT Analyst | Global Logistics (2024 - Present)
+- Monitored server uptime and assisted senior engineers.
+- 1.0 years of experience in IT administration.
+
+EDUCATION
+Bachelor of Science in Information Technology | NYU (2020 - 2024)

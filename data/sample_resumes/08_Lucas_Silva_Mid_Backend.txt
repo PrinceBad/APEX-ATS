@@ -1,0 +1,17 @@
+LUCAS SILVA
+Austin, TX | lucas.silva@example.com
+
+SUMMARY
+Backend Software Engineer with 3.5 years of experience designing cloud REST APIs and microservices in Python, FastAPI, and AWS.
+
+EXPERIENCE
+Backend Engineer | FinTech API Corp (2022 - Present)
+- Developed scalable microservices using Python, FastAPI, and PostgreSQL serving 10,000 requests per minute.
+- Deployed containerized applications using Docker and AWS ECS.
+- Improved database query latency by 25% through redis caching.
+
+EDUCATION
+Bachelor of Science in Computer Science | Texas A&M (2018 - 2022)
+
+SKILLS
+Python, FastAPI, Docker, AWS, PostgreSQL, Redis, Git

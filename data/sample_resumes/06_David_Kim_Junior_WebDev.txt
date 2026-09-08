@@ -1,0 +1,16 @@
+DAVID KIM
+Los Angeles, CA | david.kim@example.com
+
+SUMMARY
+Frontend web developer with 1.2 years of experience building consumer web interfaces in React, Tailwind CSS, and Node.js.
+
+EXPERIENCE
+Frontend Developer | StudioPix (2025 - Present)
+- Built interactive web dashboards using React, Vite, and CSS.
+- Collaborated with UX designers to improve user checkout conversion by 12%.
+
+EDUCATION
+Bachelor of Science in Graphic Design | UCLA (2021 - 2025)
+
+SKILLS
+React, JavaScript, HTML, CSS, Tailwind, Node.js

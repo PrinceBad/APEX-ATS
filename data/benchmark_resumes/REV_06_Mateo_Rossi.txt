@@ -1,0 +1,1 @@
+Senior Cloud Infrastructure Engineer with 9.0 years experience. Master of Kubernetes and container orchestration. Built vLLM deployment pipelines, limited LiteRT experience. BS in CS. Skills: Python, Kubernetes, vLLM, Docker, AWS.

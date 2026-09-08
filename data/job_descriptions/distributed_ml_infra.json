@@ -1,0 +1,21 @@
+{
+  "title": "Staff ML Infrastructure Engineer",
+  "description": "Architecting multi-cluster Kubernetes training and inference topologies for large multi-modal models. Specializing in high-throughput Triton serving, GPU cluster management, and continuous batching with vLLM.",
+  "min_experience_years": 5.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "python",
+    "kubernetes",
+    "vllm",
+    "triton"
+  ],
+  "preferred_skills": [
+    "docker",
+    "c++",
+    "aws",
+    "terraform",
+    "pagedattention"
+  ],
+  "category": "Cloud Infra",
+  "icon": "\u2601\ufe0f"
+}

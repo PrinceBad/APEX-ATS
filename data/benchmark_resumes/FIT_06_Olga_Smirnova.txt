@@ -1,0 +1,1 @@
+Edge AI Systems Architect with 5.5 years exp in low-latency runtime optimization. Quantized neural networks for LiteRT and integrated vLLM microservices into Kubernetes production clusters. MS in CS. Skills: Python, C++, LiteRT, vLLM, Kubernetes, ONNX, Docker.

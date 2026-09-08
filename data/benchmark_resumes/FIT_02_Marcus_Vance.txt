@@ -1,0 +1,1 @@
+Machine Learning Systems Engineer with 5.0 years of production experience deploying Triton and vLLM clusters on AWS with Kubernetes. 35% memory reduction with ONNX FP8. MS in Computer Engineering from Georgia Tech. Skills: Python, C++, vLLM, Kubernetes, Triton, Docker, LiteRT.

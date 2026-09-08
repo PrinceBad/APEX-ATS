@@ -1,0 +1,1 @@
+Backend Software Engineer with 3.5 years experience designing REST APIs and microservices in Python, FastAPI, and AWS. BS in CS from Texas A&M. Skills: Python, FastAPI, Docker, AWS, PostgreSQL, Redis.

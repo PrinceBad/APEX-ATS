@@ -1,0 +1,3 @@
+Priya Sharma
+Chicago, IL | priya.sharma@example.com
+Senior AI Systems Engineer with 6.5 years experience deploying LiteRT and vLLM on 120 Kubernetes nodes. INT4 quantization, 45% latency reduction, 50,000 QPS. BS in CS. Skills: Python, C++, LiteRT, vLLM, Kubernetes, Docker, Triton.

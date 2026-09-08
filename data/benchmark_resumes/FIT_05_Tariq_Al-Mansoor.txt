@@ -1,0 +1,1 @@
+Senior MLSys Engineer with 4.5 years experience architecting containerized model serving. Deployed vLLM with PagedAttention on AWS EKS with Kubernetes, cutting GPU costs by $800k. Production LiteRT deployment. BS in Software Engineering. Skills: Python, Kubernetes, vLLM, LiteRT, Triton.

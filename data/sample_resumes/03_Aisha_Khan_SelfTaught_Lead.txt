@@ -1,0 +1,20 @@
+AISHA KHAN
+Seattle, WA | aisha.k@example.com
+
+SUMMARY
+Self-taught Lead Infrastructure Architect with 8.5 years of deep production systems experience. Pioneer in distributed container orchestration and open-source local LLM inference engines.
+
+EXPERIENCE
+Principal Systems Architect | CloudNative Systems (2020 - Present)
+- Architected enterprise Kubernetes clusters running vLLM and LiteRT model serving pipelines for Fortune 500 clients.
+- Achieved 60% inference speedup across 500 edge nodes using int4 quantization and memory alignment.
+- Mentored team of 14 senior engineers and managed $3M annual compute budget.
+
+Senior Infrastructure Engineer | Apex Cloud (2016 - 2020)
+- Engineered automated multi-region deployment pipelines using Docker, Kubernetes (k8s), and Python.
+
+EDUCATION
+Self-Taught / High School Diploma (No formal university degree)
+
+SKILLS
+Kubernetes, vLLM, LiteRT, Python, Docker, C++, Triton, Cloud Infrastructure

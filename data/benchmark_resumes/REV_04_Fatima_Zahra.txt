@@ -1,0 +1,1 @@
+Self-taught Machine Learning Engineer with 6.0 years experience. Deployed LiteRT and vLLM pipelines on Kubernetes clusters. High school diploma only. Skills: Python, Kubernetes, LiteRT, vLLM, Docker.

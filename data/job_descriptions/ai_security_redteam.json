@@ -1,0 +1,22 @@
+{
+  "title": "AI Security & Adversarial Red Teamer",
+  "description": "Executing adversarial threat modeling, prompt injection red-teaming, model jailbreak mitigation, and data leakage prevention for enterprise LLM systems. Securing AI agentic tool execution and implementing guardrails against OWASP LLM Top 10 vulnerabilities.",
+  "min_experience_years": 3.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "python",
+    "adversarial security",
+    "prompt injection defense",
+    "penetration testing"
+  ],
+  "preferred_skills": [
+    "guardrails",
+    "owasp",
+    "docker",
+    "cybersecurity",
+    "kali linux",
+    "threat modeling"
+  ],
+  "category": "AI Security",
+  "icon": "\ud83d\udee1\ufe0f"
+}

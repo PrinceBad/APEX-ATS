@@ -1,0 +1,770 @@
+/* ==========================================================================
+   APEX ATS // CASEFILE & AUDIT LEDGER DESIGN SYSTEM
+   Editorial, institutional, high-legibility interface designed for
+   long-form resume reading, calibrated evaluation, and defensible audit trails.
+   Palette: Warm Paper (#F7F4EE), Archival Ink (#1C1B19), Deep Signal Blue (#2B4570)
+   ========================================================================== */
+
+:root {
+  /* Surface & Background */
+  --bg-canvas: #F7F4EE;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #EFECE4;
+  --bg-hover: #F2EFE8;
+  --border-hairline: #E2DFD6;
+  --border-strong: #C8C4B7;
+
+  /* Typography & Ink */
+  --text-ink: #1C1B19;
+  --text-secondary: #4A4844;
+  --text-muted: #737068;
+  --text-faint: #A5A299;
+
+  /* Core Interactive Signal (Deep Blue) */
+  --accent-signal: #2B4570;
+  --accent-signal-hover: #1E3253;
+  --accent-signal-soft: #EBF0F7;
+
+  /* Semantic Audit Determinations */
+  /* Qualified Match */
+  --status-pass: #2F5D4E;
+  --status-pass-bg: #EDF4F0;
+  --status-pass-border: #BCD9CC;
+
+  /* Recruiter Review */
+  --status-review: #B8863B;
+  --status-review-bg: #FAF5EB;
+  --status-review-border: #E8D5B5;
+
+  /* Archived / Unmatched (Zero Red) */
+  --status-archive: #73726E;
+  --status-archive-bg: #F2F1ED;
+  --status-archive-border: #DCD9D2;
+
+  /* Security Threat (Quarantined Injections Only) */
+  --status-security: #B5533C;
+  --status-security-bg: #FDF2F0;
+  --status-security-border: #F0CBC4;
+
+  /* Font Families */
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* Sizing & Layout */
+  --max-content-width: 1360px;
+  --prose-max-width: 75ch;
+  --shadow-subtle: 0 1px 3px rgba(28, 27, 25, 0.04), 0 1px 2px rgba(28, 27, 25, 0.02);
+  --shadow-dossier: 0 12px 36px rgba(28, 27, 25, 0.12), 0 4px 12px rgba(28, 27, 25, 0.06);
+}
+
+/* --- Base & Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-ink);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* --- Institutional Top Masthead --- */
+.cf-masthead {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-hairline);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-subtle);
+}
+
+.cf-masthead-inner {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cf-brand-group {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.cf-brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text-ink);
+}
+
+.cf-brand-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-left: 1px solid var(--border-hairline);
+  padding-left: 12px;
+}
+
+.cf-nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cf-nav-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.cf-nav-btn:hover {
+  color: var(--text-ink);
+  background-color: var(--bg-subtle);
+}
+
+.cf-nav-btn.active {
+  color: var(--accent-signal);
+  font-weight: 600;
+  background-color: var(--accent-signal-soft);
+}
+
+.cf-system-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.cf-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--status-pass);
+  display: inline-block;
+}
+
+/* --- Main Layout Container --- */
+.cf-main-container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* --- Active Target Specification Card --- */
+.cf-target-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.cf-target-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.cf-target-pretitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-signal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.cf-target-title {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: var(--text-ink);
+  letter-spacing: -0.01em;
+}
+
+.cf-target-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.cf-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cf-meta-label {
+  color: var(--text-muted);
+}
+
+.cf-meta-value {
+  font-weight: 600;
+  color: var(--text-ink);
+}
+
+.cf-skills-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.cf-skill-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.cf-skill-chip {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-hairline);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+
+.cf-skill-chip.must-have {
+  background-color: #EAE6DB;
+  border-color: #D3CEBF;
+  color: var(--text-ink);
+  font-weight: 500;
+}
+
+/* --- Presets Carousel Strip --- */
+.cf-presets-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  margin-bottom: 24px;
+}
+
+.cf-preset-pill {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+}
+
+.cf-preset-pill:hover {
+  border-color: var(--border-strong);
+  color: var(--text-ink);
+  background-color: #FAF8F5;
+}
+
+.cf-preset-pill.active {
+  background-color: var(--accent-signal-soft);
+  border-color: var(--accent-signal);
+  color: var(--accent-signal);
+  font-weight: 600;
+}
+
+/* --- Controls & Filter Bar --- */
+.cf-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cf-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--bg-subtle);
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid var(--border-hairline);
+}
+
+.cf-filter-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 5px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cf-filter-btn:hover {
+  color: var(--text-ink);
+}
+
+.cf-filter-btn.active {
+  background-color: var(--bg-surface);
+  color: var(--text-ink);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.cf-search-input {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-ink);
+  min-width: 240px;
+}
+
+.cf-search-input:focus {
+  outline: none;
+  border-color: var(--accent-signal);
+  box-shadow: 0 0 0 2px var(--accent-signal-soft);
+}
+
+.cf-select {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--text-ink);
+  cursor: pointer;
+}
+
+/* --- Action Buttons --- */
+.cf-btn {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+
+.cf-btn-primary {
+  background-color: var(--accent-signal);
+  color: #FFFFFF;
+}
+
+.cf-btn-primary:hover {
+  background-color: var(--accent-signal-hover);
+}
+
+.cf-btn-secondary {
+  background-color: var(--bg-surface);
+  border-color: var(--border-hairline);
+  color: var(--text-secondary);
+}
+
+.cf-btn-secondary:hover {
+  border-color: var(--border-strong);
+  color: var(--text-ink);
+}
+
+/* --- Document Ingestion Station --- */
+.cf-ingestion-box {
+  background-color: var(--bg-surface);
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+  transition: all 0.15s ease;
+}
+
+.cf-ingestion-box.drag-active {
+  border-color: var(--accent-signal);
+  background-color: var(--accent-signal-soft);
+}
+
+.cf-ingestion-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-ink);
+}
+
+.cf-ingestion-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Telemetry Micro-Bar */
+.cf-telemetry-strip {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 12px;
+}
+
+/* --- Primary Audit Ledger Table --- */
+.cf-table-container {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  margin-bottom: 32px;
+}
+
+.cf-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.cf-table th {
+  background-color: #FAF8F4;
+  border-bottom: 1px solid var(--border-hairline);
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.cf-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-hairline);
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.cf-table tbody tr {
+  transition: background-color 0.12s ease;
+}
+
+.cf-table tbody tr:hover {
+  background-color: #FAF8F3;
+}
+
+.cf-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Tabular Numerals & Score Dots */
+.cf-score-cell {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cf-score-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.cf-score-dot.dot-pass { background-color: var(--status-pass); }
+.cf-score-dot.dot-review { background-color: var(--status-review); }
+.cf-score-dot.dot-archive { background-color: var(--status-archive); }
+.cf-score-dot.dot-security { background-color: var(--status-security); }
+
+.cf-cand-name-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-ink);
+}
+
+.cf-cand-file-name {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+/* Status Chips (Editorial Pill) */
+.cf-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.cf-status-pill.pill-pass {
+  background-color: var(--status-pass-bg);
+  color: var(--status-pass);
+  border: 1px solid var(--status-pass-border);
+}
+
+.cf-status-pill.pill-review {
+  background-color: var(--status-review-bg);
+  color: var(--status-review);
+  border: 1px solid var(--status-review-border);
+}
+
+.cf-status-pill.pill-archive {
+  background-color: var(--status-archive-bg);
+  color: var(--status-archive);
+  border: 1px solid var(--status-archive-border);
+}
+
+.cf-status-pill.pill-security {
+  background-color: var(--status-security-bg);
+  color: var(--status-security);
+  border: 1px solid var(--status-security-border);
+}
+
+/* --- Candidate Dossier Reading Drawer / Modal --- */
+.cf-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(28, 27, 25, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.cf-dossier-modal {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 8px;
+  box-shadow: var(--shadow-dossier);
+  width: 100%;
+  max-width: 1060px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cf-dossier-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border-hairline);
+  background-color: #FAF8F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cf-dossier-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+}
+
+.cf-resume-pane {
+  max-width: var(--prose-max-width);
+}
+
+.cf-resume-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: var(--text-ink);
+}
+
+.cf-resume-subhead {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.cf-resume-prose {
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--text-ink);
+  white-space: pre-wrap;
+}
+
+/* Marginalia STAR boxes */
+.cf-star-box {
+  background-color: var(--bg-subtle);
+  border-left: 3px solid var(--status-review);
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-size: 0.84rem;
+}
+
+.cf-audit-pane {
+  background-color: #FAF8F4;
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.cf-pane-heading {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+/* Comparison Bar */
+.cf-compare-dock {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-ink);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 500;
+  font-size: 0.85rem;
+}
+
+/* Institutional Exhibits (Calibration / Sensitivity) */
+.cf-exhibit-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.cf-exhibit-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text-ink);
+  margin-bottom: 6px;
+}
+
+.cf-exhibit-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.cf-caveat-banner {
+  background-color: #FAF6ED;
+  border: 1px solid #E5DCB8;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 0.82rem;
+  color: #63501A;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.cf-caveat-banner strong {
+  color: #45360E;
+}
+
+/* Form Styles */
+.cf-form-group {
+  margin-bottom: 14px;
+}
+
+.cf-form-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.cf-form-input, .cf-form-textarea {
+  width: 100%;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-ink);
+}
+
+.cf-form-input:focus, .cf-form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-signal);
+  box-shadow: 0 0 0 2px var(--accent-signal-soft);
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Principal Lakehouse & Streaming Data Engineer",
+  "description": "Architecting petabyte-scale streaming lakehouse architectures and real-time analytical pipelines. Expert in Apache Iceberg metadata catalogs, Apache Spark ETL, event streaming with Kafka/Flink, and cloud data warehouses.",
+  "min_experience_years": 5.0,
+  "required_degree": "Bachelor's",
+  "must_have_skills": [
+    "python",
+    "sql",
+    "spark",
+    "kafka",
+    "iceberg"
+  ],
+  "preferred_skills": [
+    "flink",
+    "dbt",
+    "bigquery",
+    "kubernetes",
+    "aws",
+    "data governance"
+  ],
+  "category": "Data & Streaming",
+  "icon": "\ud83c\udf0a"
+}

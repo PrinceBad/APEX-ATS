@@ -1,0 +1,1 @@
+High-potential Systems Engineer with 3.2 years of experience (close to 4y requirement). Deployed vLLM on Kubernetes and tested LiteRT models. BS in Computer Science. Skills: Python, Kubernetes, vLLM, LiteRT, Docker.

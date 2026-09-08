@@ -1,0 +1,1 @@
+Self-taught Lead Systems Architect with 8.5 years deep experience. Architected Kubernetes clusters running vLLM and LiteRT model serving. 60% inference speedup across 500 edge nodes. High School Diploma (no degree). Skills: Python, Kubernetes, vLLM, LiteRT, Docker.

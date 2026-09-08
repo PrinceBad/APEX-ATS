@@ -1,0 +1,1 @@
+Junior-to-Mid MLSys Engineer with 3.0 years experience. Maintained Kubernetes clusters and optimized vLLM serving. BS in Computer Science. Skills: Python, Kubernetes, vLLM, Docker.
