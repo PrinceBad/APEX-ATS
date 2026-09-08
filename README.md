@@ -1,5 +1,14 @@
 # APEX ATS // Dual-Layer Resume Screening & Verification Engine
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-apex--ats--lake.vercel.app-00f0ff?style=for-the-badge&logo=vercel&logoColor=white)](https://apex-ats-lake.vercel.app/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Anti-Cheat](https://img.shields.io/badge/Anti--Cheat-Prompt_Injection_Defended-10B981?style=for-the-badge&logo=shield)](https://github.com/PrinceBad/APEX-ATS)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+> 🚀 **Live Interactive Demo**: [https://apex-ats-lake.vercel.app/](https://apex-ats-lake.vercel.app/)
+>
 > **High-Throughput Hybrid Retrieval Architecture (BM25 + Dense Semantic Matching) with Adversarial Prompt-Injection Defense, Empirical Threshold Calibration, and High-Contrast Command Interface.**
 
 ---
@@ -7,9 +16,9 @@
 ## 💡 About APEX-ATS
 
 ### What is APEX-ATS?
-**APEX-ATS** (Automated Processing & Evaluation eXchange — Applicant Tracking System) is an open-architecture, audit-grade talent intelligence platform engineered for modern recruitment environments. Built from first principles, APEX bridges the gap between brittle 1990s-style keyword filters and opaque, unpredictable LLM "black boxes."
+**APEX-ATS** (Automated Processing & Evaluation eXchange — Applicant Tracking System) is an open-architecture, audit-grade talent intelligence platform engineered for high-stakes recruitment pipelines. Built from first principles, APEX solves the deep flaws of both 1990s-era boolean regex filters and modern, opaque LLM "black boxes" by establishing a transparent, verifiable evaluation chain.
 
-It combines **deterministic lexical retrieval (BM25 Okapi)** with **dense contextual semantic embeddings**, augmented by a dedicated **adversarial security interception layer** and **empirical threshold calibration**.
+It integrates **deterministic lexical retrieval (BM25 Okapi)** with **dense contextual semantic embeddings**, shielded by a dedicated **adversarial threat interception layer** and backed by **empirical threshold calibration**.
 
 ### The Problem with Modern Hiring Software
 Recruiting infrastructure is currently facing a triple breakdown:
@@ -18,10 +27,14 @@ Recruiting infrastructure is currently facing a triple breakdown:
 3. **The "Black Box" Legal & Compliance Crisis**: Commercial AI screening vendors provide arbitrary percentage matches without verifiable proof chains, exposing hiring organizations to severe regulatory liability under the **EEOC Four-Fifths Rule**, **NYC Local Law 144**, and the **EU AI Act (High-Risk AI Systems)**.
 
 ### The APEX Paradigm: Transparent, Resilient, Fast
-* **Adversarial Interception First**: Resumes are treated as untrusted user input. Malicious prompt injections, invisible text payloads, and repetitive token stuffing attacks are intercepted and quarantined *before* any text reaches scoring algorithms or human recruiters.
+* **Adversarial Threat Interception**: Resumes are treated as untrusted user input. Malicious prompt injections, invisible text payloads, and repetitive token stuffing attacks are intercepted and quarantined into `SECURITY_FLAG` status *before* any text reaches scoring algorithms or human recruiters.
 * **Hybrid Lexical-Semantic Fusion**: Combines exact hard-skill requirement verification with conceptual domain understanding (e.g., recognizing that *"Slurm cluster orchestration"* satisfies *"Distributed ML Infrastructure"* requirements).
 * **Deterministic Explainability**: Every score is deconstructed into tangible evidence: prerequisite checklist fulfillment, extracted STAR impact metrics (`$1.2M saved`, `50k QPS`), and lexical/semantic sub-scores.
-* **High-Throughput & Privacy-First**: Runs locally or on sovereign infrastructure at sub-4ms latency per candidate, avoiding expensive 3rd-party LLM API calls and preventing candidate PII leakage.
+* **Three-Tier Human-in-the-Loop Routing**: Rather than a binary pass/reject cliff, candidates are triaged into **Top Contender Shortlist** ($\ge 82\%$), a protected **Human Recruiter Review Queue** ($\ge 65\%$ or minor prerequisite gaps), and an **Archived Unmatched** queue.
+* **High-Throughput & Sovereign Execution**: Runs at sub-4ms latency per candidate (~280 docs/sec on CPU) with zero recurring per-token LLM API fees and zero candidate PII leakage to third parties.
+
+### 🏷️ Domain Topics & Tags
+`ats` • `applicant-tracking-system` • `resume-screening` • `prompt-injection-defense` • `anti-cheat` • `bm25` • `semantic-search` • `nlp` • `fastapi` • `react` • `bias-audit` • `eeoc-compliance` • `hr-tech` • `verifiable-ai`
 
 ---
 

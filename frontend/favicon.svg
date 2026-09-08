@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0F172A"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" stroke="#2B4570" stroke-width="2" stroke-opacity="0.8"/>
+  <!-- Apex Chevron A -->
+  <path d="M32 12 L50 48 L42 48 L32 27 L22 48 L14 48 Z" fill="url(#apex-grad)"/>
+  <!-- Dual-Layer Retrieval Beam -->
+  <path d="M24 40 L32 23 L40 40" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Audit Base Bar -->
+  <path d="M20 46 H44" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Active Verification Node -->
+  <circle cx="32" cy="38" r="2.5" fill="#10B981"/>
+  <defs>
+    <linearGradient id="apex-grad" x1="14" y1="12" x2="50" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+</svg>
