@@ -287,3 +287,9 @@ python calibrate_and_stress_test.py
 python -m uvicorn app:app --port 8000 --host 127.0.0.1 --reload
 ```
 Open **`http://localhost:8000`** in your browser.
+
+### 6. Deploy to Vercel (1-Click Serverless)
+APEX-ATS is pre-configured with `vercel.json` for zero-configuration serverless deployment:
+1. Push your repository to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import your `APEX-ATS` repository.
+3. Click **Deploy**. Vercel automatically deploys the Python FastAPI serverless function (`/api/*`) and serves the high-contrast React dashboard (`/`) via Edge CDN.

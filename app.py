@@ -212,10 +212,13 @@ def save_custom_preset(preset: CustomPresetModel):
     JD_PRESETS[key] = data
     active_jd = data
 
-    # Persist to data/job_descriptions/{key}.json
-    os.makedirs(JD_DIR, exist_ok=True)
-    with open(os.path.join(JD_DIR, f"{key}.json"), "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
+    # Persist to data/job_descriptions/{key}.json (with graceful fallback for read-only serverless)
+    try:
+        os.makedirs(JD_DIR, exist_ok=True)
+        with open(os.path.join(JD_DIR, f"{key}.json"), "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+    except (OSError, IOError):
+        pass
 
     return {"status": "success", "key": key, "preset": data, "active_jd": active_jd}
 
@@ -332,6 +335,6 @@ def get_counterfactual_audit():
         }
     }
 
-# Mount static frontend
-os.makedirs(FRONTEND_DIR, exist_ok=True)
-app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
+# Mount static frontend for local development / self-hosted mode
+if os.path.exists(FRONTEND_DIR):
+    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
