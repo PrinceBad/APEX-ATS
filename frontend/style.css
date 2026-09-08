@@ -768,3 +768,311 @@ body {
   border-color: var(--accent-signal);
   box-shadow: 0 0 0 2px var(--accent-signal-soft);
 }
+
+/* ==========================================================================
+   RESPONSIVE & MOBILE COMPATIBILITY ENGINE
+   Breakpoints: 900px (Tablets), 768px (Mobile Landscape), 480px (Smartphones)
+   ========================================================================== */
+
+/* Grid utilities */
+.cf-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.cf-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Table mobile scroll enhancement */
+.cf-table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+/* Tablet & Mobile Landscape (<= 900px) */
+@media (max-width: 900px) {
+  .cf-masthead-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .cf-brand-group {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .cf-nav-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+    width: 100%;
+    scrollbar-width: none;
+  }
+
+  .cf-nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cf-nav-btn {
+    flex-shrink: 0;
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+
+  .cf-dossier-body {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .cf-dossier-modal {
+    max-height: 94vh;
+  }
+}
+
+/* Standard Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  .cf-main-container {
+    padding: 12px 14px 48px;
+  }
+
+  .cf-brand-tag {
+    display: none; /* Conserve vertical space */
+  }
+
+  .cf-target-card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .cf-target-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .cf-target-title {
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+
+  .cf-target-header > div:last-child {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .cf-target-header > div:last-child .cf-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .cf-target-meta {
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .cf-skills-group {
+    gap: 4px;
+  }
+
+  /* Preset strip touch optimization */
+  .cf-presets-strip {
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    scrollbar-width: none;
+  }
+
+  .cf-presets-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cf-preset-pill {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+
+  /* Filter & search controls */
+  .cf-controls-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .cf-filter-pills {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px;
+    width: 100%;
+    scrollbar-width: none;
+  }
+
+  .cf-filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cf-filter-btn {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+
+  .cf-search-input {
+    min-width: 0;
+    width: 100%;
+    font-size: 16px; /* Prevents auto-zoom on mobile browsers */
+  }
+
+  .cf-select {
+    width: 100%;
+    font-size: 16px; /* Prevents auto-zoom on mobile browsers */
+  }
+
+  /* File upload station */
+  .cf-ingestion-box {
+    padding: 16px 12px;
+    margin-bottom: 16px;
+  }
+
+  .cf-ingestion-title {
+    font-size: 1.05rem;
+  }
+
+  .cf-telemetry-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 0.72rem;
+    padding: 8px 10px;
+  }
+
+  /* Table responsive layout */
+  .cf-table {
+    min-width: 680px; /* Guarantees columns remain readable */
+  }
+
+  .cf-table th, .cf-table td {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  /* Sticky first column on horizontal swipe */
+  .cf-table th:first-child,
+  .cf-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: inherit;
+  }
+
+  /* Modals as bottom sheets on mobile */
+  .cf-modal-overlay {
+    padding: 8px;
+    align-items: flex-end;
+  }
+
+  .cf-dossier-modal {
+    max-height: 94vh;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .cf-dossier-header {
+    padding: 12px 16px;
+  }
+
+  .cf-resume-title {
+    font-size: 1.35rem;
+  }
+
+  .cf-resume-prose {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  /* Responsive Comparison Grid */
+  .cf-compare-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cf-form-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* Comparison Floating Dock on Mobile */
+  .cf-compare-dock {
+    width: calc(100% - 24px);
+    left: 12px;
+    right: 12px;
+    transform: none;
+    bottom: 12px;
+    border-radius: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .cf-compare-dock .cf-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Exhibit Cards on Mobile */
+  .cf-exhibit-card {
+    padding: 16px 14px;
+    margin-bottom: 16px;
+  }
+
+  .cf-exhibit-title {
+    font-size: 1.2rem;
+  }
+
+  .cf-caveat-banner {
+    padding: 10px 12px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Small Handhelds & Compact Phones (<= 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .cf-brand-title {
+    font-size: 1.2rem;
+  }
+
+  .cf-system-badge {
+    font-size: 0.7rem;
+  }
+
+  .cf-system-badge span:last-child {
+    display: none; /* Keep pulse dot, save horizontal room */
+  }
+
+  .cf-btn {
+    padding: 6px 10px;
+    font-size: 0.78rem;
+  }
+
+  .cf-cand-name-title {
+    font-size: 0.95rem;
+  }
+}

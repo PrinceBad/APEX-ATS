@@ -1122,7 +1122,7 @@ function App() {
               </button>
             </div>
             <div style={{ padding: '24px', overflowY: 'auto' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+              <div className="cf-compare-grid">
                 {compareList.map((cand, idx) => (
                   <div key={idx} style={{ background: 'var(--bg-subtle)', padding: '20px', borderRadius: '6px', border: '1px solid var(--border-hairline)' }}>
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', marginBottom: '4px' }}>
@@ -1180,7 +1180,7 @@ function App() {
                 />
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+              <div className="cf-form-row">
                 <div className="cf-form-group">
                   <label className="cf-form-label">Domain Category</label>
                   <input 
@@ -1201,7 +1201,7 @@ function App() {
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+              <div className="cf-form-row">
                 <div className="cf-form-group">
                   <label className="cf-form-label">Tenure Requirement (Years)</label>
                   <input 
