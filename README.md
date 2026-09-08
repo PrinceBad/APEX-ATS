@@ -11,6 +11,11 @@
 >
 > **High-Throughput Hybrid Retrieval Architecture (BM25 + Dense Semantic Matching) with Adversarial Prompt-Injection Defense, Empirical Threshold Calibration, and High-Contrast Command Interface.**
 
+<div align="center">
+  <img src="assets/apex_ats_demo.gif" alt="APEX-ATS Command Center Interactive Demo" width="100%" />
+  <p><em>⚡ <b>Live Interactive Demo:</b> Dual-Layer Retrieval, Real-Time Prompt Injection Quarantine & Explainable STAR Audit Ledger</em></p>
+</div>
+
 ---
 
 ## 💡 About APEX-ATS
